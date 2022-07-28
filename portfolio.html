@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <section class="myskills">
+        <h2>My <span>Skills</span></h2>
+        <p><q>Begin to be now what you will be hereafter.</q></p>
+        <div class="wrapper">
+
+            <div class="containers">
+
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Javascript</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Python</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="python-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>GoLang</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="go-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>PHP</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="php-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="images/my cv 3.doc"><button>Download CV</button></a>
+    </section>
+
+    <section class="portfolioWorks">
+        <h1>My <span>Works</span></h1>
+        <p><q>What you do today can improve all your tomorrows.</q></p>
+        <ul class="filter">
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="web">Web</li>
+            <li class="list" data-filter="python0">Python</li>
+            <li class="list" data-filter="go0">Go</li>
+        </ul>
+        <div class="conWork">
+            <div class="projects web" id="port1">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects python0" id="port2">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects python0" id="port3">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects python0" id="port4">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects python0" id="port5">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects web" id="port6">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects web" id="port7">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+            </div>
+            <div class="projects go0" id="port8">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+
+                </div>
+
+            </div>
+            <div class="projects web" id="port9">
+                <div class="iconshover">
+                    <i class="uil uil-link"></i>
+                    <i class="uil uil-github"></i>
+                    <i class="uil uil-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+        <a href="index.html"><button>Go Back</button></a>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.list').click(function() {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.projects').show('1000');
+                } else {
+                    $('.projects').not('.' + value).hide('1000');
+                    $('.projects').filter('.' + value).show('1000');
+                }
+            })
+
+            //adding active class to selected list
+
+            $('.list').click(function() {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
