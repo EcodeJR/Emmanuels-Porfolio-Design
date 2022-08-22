@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/nav.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
@@ -91,67 +91,76 @@
         <div class="conWork">
             <div class="projects web" id="port1">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects python0" id="port2">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects python0" id="port3">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects python0" id="port4">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects python0" id="port5">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects web" id="port6">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects web" id="port7">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
             </div>
             <div class="projects go0" id="port8">
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
-
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
                 </div>
 
             </div>
             <div class="projects web" id="port9">
+
                 <div class="iconshover">
-                    <i class="uil uil-link"></i>
-                    <i class="uil uil-github"></i>
-                    <i class="uil uil-youtube"></i>
+                    <a title="link" href="#"><i class="uil uil-link cs"></i></a>
+                    <a title="git" href="#"><i class="uil uil-github cs"></i></a>
+                    <a title="youtube" href="#"><i class="uil uil-youtube cs"></i></a>
+                </div>
+
+            </div>
+            <div class="projects web" id="port10">
+
+                <div class="iconshover">
+                    <a title="build-box" href="https://build-box-construction.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="uil uil-link cursor"></i></a>
+                    <a href="#" title="git"><i class="uil uil-github cs"></i></a>
+                    <a href="#" title="youtube"><i class="uil uil-youtube cs"></i></a>
                 </div>
 
             </div>
@@ -183,6 +192,14 @@
                 $(this).addClass('active').siblings().removeClass('active');
             })
         })
+
+
+
+        const coming = document.querySelectorAll('.cs').forEach(item => {
+            item.addEventListener('click', function(e) {
+                alert('Coming Soon...')
+            })
+        });
     </script>
 </body>
 

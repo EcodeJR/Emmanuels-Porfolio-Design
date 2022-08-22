@@ -1263,7 +1263,7 @@ footer h4 {
     transition: all .4s ease-in-out;
 }
 
-.iconshover i {
+.iconshover a i {
     font-size: 25px;
     color: #e5001f;
     cursor: not-allowed;
@@ -1327,6 +1327,16 @@ footer h4 {
     background: url("images/my_work/turbo.png");
     background-size: cover;
     background-position: center;
+}
+
+#port10 {
+    background: url("images/my_work/build-box.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 .portfolioWorks a button {
