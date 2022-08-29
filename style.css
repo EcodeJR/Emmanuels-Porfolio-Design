@@ -1335,6 +1335,12 @@ footer h4 {
     background-position: center;
 }
 
+#port11 {
+    background: url("images/my_work/sputnik.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .cursor {
     cursor: pointer;
 }
